@@ -816,7 +816,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: disappaer_04
+      name: disappear_04
       rect:
         serializedVersion: 2
         x: 576
@@ -1191,10 +1191,10 @@ TextureImporter:
       die_06: -1222957492
       die_07: 1043529571
       die_08: -183646533
-      disappaer_04: 297378470
       disappear_01: -505676343
       disappear_02: 2007155725
       disappear_03: 799136836
+      disappear_04: 297378470
       fall_01: -1701269081
       fall_02: -385490714
       fall_03: -1280813035
