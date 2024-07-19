@@ -31,6 +31,7 @@ namespace BHSCamp
         {
             if (_ground.OnGround)
             {
+                _animator.SetBool("IsDead", true);
                 _animator.SetBool("IsOnGround", true);
                 ResetRigidBody();
             }

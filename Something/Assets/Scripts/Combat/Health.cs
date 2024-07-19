@@ -32,11 +32,11 @@ namespace BHSCamp
 
             if (_currentHealth == 0) 
             {
-                OnDeath?.Invoke();
+                OnDeath.Invoke();
             }
             else
             {
-                OnDamageTaken?.Invoke(amount);
+                OnDamageTaken.Invoke(amount);
             }
         }
 
