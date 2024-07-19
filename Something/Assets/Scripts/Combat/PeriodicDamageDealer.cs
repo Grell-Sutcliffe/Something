@@ -24,7 +24,7 @@ namespace BHSCamp
             {
                 _periodicDamageTimer = 0;
                 damageable.TakeDamage(_periodicDamage);
-                MonoBehaviour mb = (MonoBehaviour) damageable;
+                MonoBehaviour mb = (MonoBehaviour)damageable;
                 print($"Dealt {_periodicDamage} to {mb.name}");
             }
         }
