@@ -29,7 +29,7 @@ namespace BHSCamp
 
         private void Update()
         {
-            if (_ground.OnGround)
+            if (_ground.OnGround && _health.CurrentHealth == 0)
             {
                 _animator.SetBool("IsDead", true);
                 _animator.SetBool("IsOnGround", true);

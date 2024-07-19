@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 2115d02e81fd16e4d90e26b31383a4cf
+guid: 7fead656c4a67694d996bd14e0ad264b
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -48,7 +48,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 35
+  spritePixelsToUnits: 32
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -73,6 +73,19 @@ TextureImporter:
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 3
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -106,30 +119,17 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 0
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Walk_0
+      name: Skeleton_01_White_Walk_0
       rect:
         serializedVersion: 2
-        x: 0
+        x: 14
         y: 0
-        width: 150
-        height: 150
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -137,20 +137,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b3101d40d70ec5944988a0ed674b3c79
-      internalID: 1444894528
+      spriteID: 92d1a5a726c579f4e9e2bbeb49ff9523
+      internalID: -580845691
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Walk_1
+      name: Skeleton_01_White_Walk_2
       rect:
         serializedVersion: 2
-        x: 150
+        x: 110
         y: 0
-        width: 150
-        height: 150
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -158,20 +158,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f7550fcd5164bfe4eb8685ef5d4b868b
-      internalID: -1341695227
+      spriteID: d44c09610f27faf488346a35a8e56515
+      internalID: 1281664099
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Walk_2
+      name: Skeleton_01_White_Walk_3
       rect:
         serializedVersion: 2
-        x: 300
+        x: 206
         y: 0
-        width: 150
-        height: 150
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -179,20 +179,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d2f30e172246d004c95a3e664fcf3e57
-      internalID: -1230623453
+      spriteID: 02a2ccd1499d59948bd4abadd98c77b6
+      internalID: -1735133455
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Walk_3
+      name: Skeleton_01_White_Walk_5
       rect:
         serializedVersion: 2
-        x: 450
+        x: 302
         y: 0
-        width: 150
-        height: 150
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -200,8 +200,134 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 74d68b7d5eb87b4419124fdbfdb419cd
-      internalID: -273688748
+      spriteID: 7e9b54e608bf1314f996715ef0a29f4b
+      internalID: 693274351
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skeleton_01_White_Walk_6
+      rect:
+        serializedVersion: 2
+        x: 398
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23389c2ccdedf0f41b6f16350cc98722
+      internalID: 1587483491
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skeleton_01_White_Walk_8
+      rect:
+        serializedVersion: 2
+        x: 494
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dff77ca550295974ab7d37c47ce4c010
+      internalID: -252016423
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skeleton_01_White_Walk_9
+      rect:
+        serializedVersion: 2
+        x: 590
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f9c2708d57763c4c9eedd6662643f60
+      internalID: -1314417006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skeleton_01_White_Walk_11
+      rect:
+        serializedVersion: 2
+        x: 686
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1370bb7619230a48b4fcd30e43ea45c
+      internalID: 1656941900
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skeleton_01_White_Walk_12
+      rect:
+        serializedVersion: 2
+        x: 782
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30f061186998bdf4db03ce0a7613aa8b
+      internalID: -755953369
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skeleton_01_White_Walk_14
+      rect:
+        serializedVersion: 2
+        x: 878
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4db8848b1e9e15c458119c68871da8f3
+      internalID: 1108641516
       vertices: []
       indices: 
       edges: []
@@ -217,10 +343,21 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Walk_0: 1444894528
-      Walk_1: -1341695227
-      Walk_2: -1230623453
-      Walk_3: -273688748
+      Skeleton_01_White_Walk_0: -580845691
+      Skeleton_01_White_Walk_1: 137615408
+      Skeleton_01_White_Walk_10: -1698044704
+      Skeleton_01_White_Walk_11: 1656941900
+      Skeleton_01_White_Walk_12: -755953369
+      Skeleton_01_White_Walk_13: 1619768926
+      Skeleton_01_White_Walk_14: 1108641516
+      Skeleton_01_White_Walk_2: 1281664099
+      Skeleton_01_White_Walk_3: -1735133455
+      Skeleton_01_White_Walk_4: 23079
+      Skeleton_01_White_Walk_5: 693274351
+      Skeleton_01_White_Walk_6: 1587483491
+      Skeleton_01_White_Walk_7: 224017342
+      Skeleton_01_White_Walk_8: -252016423
+      Skeleton_01_White_Walk_9: -1314417006
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

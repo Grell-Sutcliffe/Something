@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 62d77b505f8ad02479e7b47dff273ac8
+guid: 67bb99ec024560a4f93fad5ee779e671
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -48,7 +48,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 35
+  spritePixelsToUnits: 32
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -69,10 +69,23 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 1024
+    maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 3
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -106,102 +119,173 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: WebGL
-    maxTextureSize: 1024
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 0
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Take Hit_0
+      name: Skeleton_01_White_Idle_0
       rect:
         serializedVersion: 2
-        x: 0
+        x: 14
         y: 0
-        width: 150
-        height: 150
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8fbfe39b4f86ef94fbad93442610aff9
-      internalID: 1593726725
+      spriteID: 317b03a2b46978343b82364135118fe6
+      internalID: 1501660768
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Take Hit_1
+      name: Skeleton_01_White_Idle_2
       rect:
         serializedVersion: 2
-        x: 150
+        x: 110
         y: 0
-        width: 150
-        height: 150
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 634f131ba7263ef41be407f82355c4bc
-      internalID: 2050929715
+      spriteID: 17db984497a773842a1c4af5c31f6e2f
+      internalID: -153312030
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Take Hit_2
+      name: Skeleton_01_White_Idle_3
       rect:
         serializedVersion: 2
-        x: 300
+        x: 206
         y: 0
-        width: 150
-        height: 150
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ddad54cad7dd86a479e4984399bcdfd0
-      internalID: -1976064994
+      spriteID: f64546cf43c602949ade9743093cc6a4
+      internalID: 973061770
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Take Hit_3
+      name: Skeleton_01_White_Idle_5
       rect:
         serializedVersion: 2
-        x: 450
+        x: 302
         y: 0
-        width: 150
-        height: 150
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a3debd427313e9c43ab801258b76de3b
-      internalID: -1197122558
+      spriteID: 851feef966fe6344e97a67c4134cbce7
+      internalID: 791704585
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skeleton_01_White_Idle_6
+      rect:
+        serializedVersion: 2
+        x: 398
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3999cc05bcc2359408505840d846a6c5
+      internalID: 1672886673
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skeleton_01_White_Idle_8
+      rect:
+        serializedVersion: 2
+        x: 494
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20b46179321486a4da3a509bced82c3a
+      internalID: -685228092
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skeleton_01_White_Idle_9
+      rect:
+        serializedVersion: 2
+        x: 590
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bde8c892de84dcd4fbde374a7f945dc7
+      internalID: 1399901318
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skeleton_01_White_Idle_11
+      rect:
+        serializedVersion: 2
+        x: 686
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42cc2e36e4819264da23092d9d51bb91
+      internalID: 520180266
       vertices: []
       indices: 
       edges: []
@@ -217,10 +301,18 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Take Hit_0: 1593726725
-      Take Hit_1: 2050929715
-      Take Hit_2: -1976064994
-      Take Hit_3: -1197122558
+      Skeleton_01_White_Idle_0: 1501660768
+      Skeleton_01_White_Idle_1: -979669245
+      Skeleton_01_White_Idle_10: 608040528
+      Skeleton_01_White_Idle_11: 520180266
+      Skeleton_01_White_Idle_2: -153312030
+      Skeleton_01_White_Idle_3: 973061770
+      Skeleton_01_White_Idle_4: 518960772
+      Skeleton_01_White_Idle_5: 791704585
+      Skeleton_01_White_Idle_6: 1672886673
+      Skeleton_01_White_Idle_7: 862174320
+      Skeleton_01_White_Idle_8: -685228092
+      Skeleton_01_White_Idle_9: 1399901318
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
