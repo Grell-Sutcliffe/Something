@@ -15,12 +15,18 @@ namespace BHSCamp
         private float _maxSpeed;
         private float _acceleration;
         private bool _onGround;
+        private float _velocityMultiplier;
 
         private void Awake()
         {
             _body = GetComponent<Rigidbody2D>();
             _ground = GetComponent<Ground>();
 
+        }
+
+        private void Start()
+        {
+            _velocityMultiplier = 1f;
         }
 
         private void FixedUpdate()
@@ -36,9 +42,13 @@ namespace BHSCamp
 
         public void SetVelocity(Vector2 direction, float speed)
         {
-            _maxSpeed = speed;
+            _maxSpeed = speed * _velocityMultiplier;
             _desiredVelocity = direction * Mathf.Max(_maxSpeed - _ground.Friction, 0f);
         }
-        //_body.transform.localScale = new Vector3(-_body.transform.localScale.x, _body.transform.localScale.y, _body.transform.localScale.z);
+
+        public void SetVelocityMultiplier(float multiplier)
+        {
+            _velocityMultiplier = multiplier;
+        }
     }
 }
