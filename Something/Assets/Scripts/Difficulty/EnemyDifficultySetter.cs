@@ -23,8 +23,8 @@ namespace BHSCamp
         private void SetDifficulty(DifficultyData difficulty)
         {
             _health.SetMaxHPMultiplier(difficulty.EnemyHPMultiplier);
-            //_attack?.SetDamageMultiplier(difficulty.EnemyDamageMultiplier);
-            //_damageDealer?.SetDamageMultiplier(difficulty.EnemyDamageMultiplier);
+            _attack?.SetDamageMultiplier(difficulty.EnemyDamageMultiplier);
+            _damageDealer?.SetDamageMultiplier(difficulty.EnemyDamageMultiplier);
         }
     }
 }

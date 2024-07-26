@@ -20,6 +20,11 @@ namespace BHSCamp
             DealInstantDamage(collider.GetComponent<IDamageable>());
         }
 
+        public void SetDamageMultiplier(float multiplier)
+        {
+            _instantDamage = (int)(_instantDamage * multiplier);
+        }
+
         private void DealInstantDamage(IDamageable damageable)
         {
             // если объект, с которым произошла коллизия, не имеет компонент IDamageable,
@@ -35,7 +40,7 @@ namespace BHSCamp
                 ApplyKnockback(rb, knockbackDirection, _knockbackForce);
             }
             damageable.TakeDamage(_instantDamage);
-            print($"Dealt {_instantDamage} damage to {mb.name}");
+            //print($"Dealt {_instantDamage} damage to {mb.name}");
         }
 
         private void ApplyKnockback(Rigidbody2D rb, Vector2 direction, float knockForce)

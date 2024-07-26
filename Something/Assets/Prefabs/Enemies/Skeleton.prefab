@@ -245,6 +245,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _attackAnimationClip: {fileID: 7400000, guid: 866714ad6e7abee4d9b1073eb8514db2, type: 2}
   _attackCD: 2
+  _damageDealer: {fileID: 3732509851730974636}
 --- !u!95 &3491424696599194308
 Animator:
   serializedVersion: 5
