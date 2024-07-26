@@ -1036,6 +1036,8 @@ MonoBehaviour:
   _levels:
   - {fileID: 11400000, guid: c083f440b9dfac041b02209a0bb76ee5, type: 2}
   - {fileID: 11400000, guid: 4bc6327455bbf5b43949459b8ed1a266, type: 2}
+  - {fileID: 11400000, guid: 7dac9f1be74efb84db6b09a5e595a6e0, type: 2}
+  - {fileID: 11400000, guid: 40e1ddec93627804a9326c0b177ebc1e, type: 2}
   _levelName: {fileID: 443275966}
   _playButton: {fileID: 1465665855}
   _preview: {fileID: 928658311}
@@ -1432,7 +1434,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
   m_AnchoredPosition: {x: 0, y: -75}
-  m_SizeDelta: {x: 1000, y: 150}
+  m_SizeDelta: {x: 1700, y: 150}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &443275966
 MonoBehaviour:
@@ -2470,7 +2472,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 2500, y: 1500}
+  m_SizeDelta: {x: 2500, y: 1550}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &637925998
 GameObject:

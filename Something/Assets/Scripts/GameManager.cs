@@ -1,3 +1,4 @@
+using BHSCamp;
 using System;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -8,7 +9,8 @@ public class GameManager : MonoBehaviour
     public static event Action OnScoreChanged;
     [SerializeField] private LevelPreviewData[] _levels;
     private int _currentLevelIndex;
-    public int Score { 
+    public int Score 
+    { 
         get { return _score; } 
     }
     private int _score;
@@ -21,6 +23,12 @@ public class GameManager : MonoBehaviour
         }
         Instance = this;
         DontDestroyOnLoad(gameObject);
+    }
+
+    private void Start()
+    {
+        SaveLoadSystem.Initialize(_levels);
+        SaveLoadSystem.UnlockCompletedLevels();
     }
 
     public void AddScore(int amount)
