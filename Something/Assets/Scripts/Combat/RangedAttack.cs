@@ -7,10 +7,16 @@ namespace BHSCamp
         [SerializeField] private Projectile _projectilePrefab; // префаб проджектайла
         [SerializeField] private float _projectileSpawnOffset; // отступ, на котором будет спавниться проджектайл
         [SerializeField] private Transform _projectileParent;
+        private float _damageMultiplier = 1f;
 
         private void Awake()
         {
             _animator = GetComponent<Animator>();
+        }
+
+        public override void SetDamageMultiplier(float multiplier)
+        {
+            _damageMultiplier = multiplier;
         }
 
         public override void BeginAttack()

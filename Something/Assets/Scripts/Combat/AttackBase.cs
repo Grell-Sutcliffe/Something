@@ -11,6 +11,8 @@ namespace BHSCamp
         protected Animator _animator;
         protected Vector3 _target;
 
+        public abstract void SetDamageMultiplier(float multiplier);
+
         public virtual void BeginAttack()
         {
             IsAttacking = true;
