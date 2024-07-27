@@ -22,9 +22,9 @@ public class Healthbar : MonoBehaviour
     private void UpdateHealthbar(int healthChange)
     {
         SetFill(
-            (float)_health.CurrentHealth / 
+            (float)_health.CurrentHealth /
             _health.MaxHealth
-            );
+        );
     }
 
     private void SetFill(float value)
