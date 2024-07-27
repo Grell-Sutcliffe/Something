@@ -4,6 +4,8 @@ namespace BHSCamp
 {
     public class Projectile : MonoBehaviour
     {
+        [SerializeField] protected LayerMask _wizardLayerMask;
+
         [SerializeField] private float _speed;
         private Rigidbody2D _body;
 
@@ -14,7 +16,8 @@ namespace BHSCamp
 
         private void OnCollisionEnter2D(Collision2D collision)
         {
-            Destroy(gameObject);
+            if (collision.gameObject.layer != _wizardLayerMask)
+                Destroy(gameObject);
         }
 
         public void SetDirection(Vector2 direction)

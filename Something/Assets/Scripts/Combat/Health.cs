@@ -1,23 +1,23 @@
 using System;
 using UnityEngine;
-using UnityEngine.Serialization;
 
 namespace BHSCamp
 {
     //компонент, отвечающий за здоровье сущности
     public class Health : MonoBehaviour, IDamageable, IHealable
     {
-        [FormerlySerializedAs(oldName:"_maxHealth")] [SerializeField] private int _defaultMaxHealth = 100;
-
+        [SerializeField] private int _defaultMaxHealth;
         public event Action OnDeath; //событие, вызываемое при смерти
         public event Action<int> OnDamageTaken; //событие, вызываемое при получении урона
         public event Action<int> OnHealed; //событие, вызываемое при восстановлении здоровья
 
         private int _maxHealth;
-        private int _currentHealth;
+        public int MaxHealth { get { return _maxHealth; } }
 
-        public int CurrentHealth { get {return _currentHealth;} }
-        public int MaxHealth { get {return _maxHealth;} }
+        private int _currentHealth;
+        public int CurrentHealth { get { return _currentHealth; } }
+
+        private float _hpMultiplier = 1f;
 
         public void TakeDamage(int amount)
         {
@@ -28,10 +28,8 @@ namespace BHSCamp
             _currentHealth = Mathf.Clamp(_currentHealth, 0, _defaultMaxHealth); //здоровье не может быть < 0
 
             OnDamageTaken?.Invoke(amount);
-            if (_currentHealth == 0) 
-            {
+            if (_currentHealth == 0)
                 OnDeath?.Invoke();
-            }
         }
 
         public void Heal(int amount)
@@ -47,6 +45,7 @@ namespace BHSCamp
         {
             _maxHealth = (int)(_defaultMaxHealth * multiplier);
             _currentHealth = _maxHealth;
+            _hpMultiplier = multiplier;
         }
     }
 }

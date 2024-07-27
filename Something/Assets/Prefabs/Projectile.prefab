@@ -100,6 +100,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8dc0c860142867d4a9ae514629a6624e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _wizardLayerMask:
+    serializedVersion: 2
+    m_Bits: 64
   _speed: 5
 --- !u!114 &3352943834424426551
 MonoBehaviour:
@@ -113,6 +116,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 82e6cbfb9a7f3e7468884f980fec6cbc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _wizardLayerMask:
+    serializedVersion: 2
+    m_Bits: 64
   _instantDamage: 10
   _knockbackApplied: 0
   _knockbackForce: 0
@@ -155,10 +161,10 @@ CircleCollider2D:
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 9
   m_ExcludeLayers:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 64
   m_LayerOverridePriority: 0
   m_ForceSendLayers:
     serializedVersion: 2

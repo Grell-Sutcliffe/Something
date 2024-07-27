@@ -20,7 +20,7 @@ GameObject:
   - component: {fileID: 7283465172159252801}
   - component: {fileID: 3150928225052833372}
   - component: {fileID: 6505010937700750678}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: FlyingMonster
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -268,7 +268,7 @@ MonoBehaviour:
   _attackAnimationClip: {fileID: 7400000, guid: c4df9ea81612dc4478f3c02ece028386, type: 2}
   _attackCD: 3
   _projectilePrefab: {fileID: 1865279856960219847, guid: c4f660877c774c34ab8fcb84ad4dc740, type: 3}
-  _projectileSpawnOffset: 0.5
+  _projectileSpawnOffset: 0
   _projectileParent: {fileID: 0}
 --- !u!114 &3150928225052833372
 MonoBehaviour:
@@ -305,7 +305,7 @@ GameObject:
   - component: {fileID: 5308825873889248830}
   - component: {fileID: 4551812930164914124}
   - component: {fileID: 9109247300526966381}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: MeleeAttackTrigger
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -475,6 +475,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1610415740652930777, guid: 3193f23249b829543ab5a271f85a6db4, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 3216748851528419745, guid: 3193f23249b829543ab5a271f85a6db4, type: 3}
       propertyPath: m_Type
       value: 0
@@ -485,6 +489,10 @@ PrefabInstance:
       objectReference: {fileID: -1075899664, guid: 5733f7a50b8eabf41a0fb13bc28abfb9, type: 3}
     - target: {fileID: 3569595567496574425, guid: 3193f23249b829543ab5a271f85a6db4, type: 3}
       propertyPath: _health
+      value: 
+      objectReference: {fileID: 5575493711130840912}
+    - target: {fileID: 3569595567496574425, guid: 3193f23249b829543ab5a271f85a6db4, type: 3}
+      propertyPath: _healthComponent
       value: 
       objectReference: {fileID: 5575493711130840912}
     - target: {fileID: 4285907040202172394, guid: 3193f23249b829543ab5a271f85a6db4, type: 3}
@@ -499,6 +507,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Healthbar
       objectReference: {fileID: 0}
+    - target: {fileID: 5855364336893941138, guid: 3193f23249b829543ab5a271f85a6db4, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 7482847235294653066, guid: 3193f23249b829543ab5a271f85a6db4, type: 3}
       propertyPath: m_Type
       value: 3
@@ -507,6 +519,10 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 277701782, guid: 5733f7a50b8eabf41a0fb13bc28abfb9, type: 3}
+    - target: {fileID: 7492973344826627876, guid: 3193f23249b829543ab5a271f85a6db4, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

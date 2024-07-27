@@ -472,6 +472,10 @@ PrefabInstance:
       propertyPath: _health
       value: 
       objectReference: {fileID: 1194584994670058632}
+    - target: {fileID: 3569595567496574425, guid: 3193f23249b829543ab5a271f85a6db4, type: 3}
+      propertyPath: _healthComponent
+      value: 
+      objectReference: {fileID: 1194584994670058632}
     - target: {fileID: 4285907040202172394, guid: 3193f23249b829543ab5a271f85a6db4, type: 3}
       propertyPath: m_PresetInfoIsWorld
       value: 1
