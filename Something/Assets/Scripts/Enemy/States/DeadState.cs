@@ -7,7 +7,7 @@ namespace BHSCamp
     {
         //protected Healthbar _healthbar;
         //protected Health _health;
-        protected Collider2D _collider;
+        //protected Collider2D _collider;
 
         private PatrolEnemy _enemy;
         private Animator _animator;
@@ -20,7 +20,7 @@ namespace BHSCamp
             //_healthbar = enemy.GetComponent<Healthbar>();
             //_health = enemy.GetComponent<Health>();
 
-            _collider = enemy.GetComponent<Collider2D>();
+            //_collider = enemy.GetComponent<Collider2D>();
 
             _respawn = respawn;
             _respawnTime = respawnTime;

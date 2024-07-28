@@ -6,6 +6,9 @@ namespace BHSCamp
     //компонент, отвечающий за здоровье сущности
     public class Health : MonoBehaviour, IDamageable, IHealable
     {
+        [SerializeField] GameObject _Healthbar;
+        protected Healthbar _healthbar;
+
         [SerializeField] private int _defaultMaxHealth;
         public event Action OnDeath; //событие, вызываемое при смерти
         public event Action<int> OnDamageTaken; //событие, вызываемое при получении урона
@@ -18,6 +21,11 @@ namespace BHSCamp
         public int CurrentHealth { get { return _currentHealth; } }
 
         private float _hpMultiplier = 1f;
+
+        private void Start()
+        {
+            _healthbar = _Healthbar.GetComponent<Healthbar>();
+        }
 
         public void TakeDamage(int amount)
         {
@@ -38,6 +46,11 @@ namespace BHSCamp
         {
             if (amount < 0) // нельзя захилить отрицательное кол-во хп
                 throw new ArgumentOutOfRangeException($"amount should be positive: {gameObject.name}");
+
+            if (amount == MaxHealth)
+                _Healthbar.SetActive(true);
+                _healthbar.UpdateHealthbar(MaxHealth);
+
             _currentHealth += amount;
             _currentHealth = Mathf.Clamp(_currentHealth, 0, _defaultMaxHealth);
             OnHealed?.Invoke(amount);

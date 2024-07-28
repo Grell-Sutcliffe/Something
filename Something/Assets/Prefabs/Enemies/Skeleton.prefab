@@ -179,6 +179,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5671569395c47cd428b2d7ef71475307, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _Healthbar: {fileID: 1722930825350619524}
   _defaultMaxHealth: 100
 --- !u!114 &8481402528571857611
 MonoBehaviour:
@@ -497,6 +498,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3193f23249b829543ab5a271f85a6db4, type: 3}
+--- !u!1 &1722930825350619524 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5855364336893941138, guid: 3193f23249b829543ab5a271f85a6db4, type: 3}
+  m_PrefabInstance: {fileID: 5092298641663980566}
+  m_PrefabAsset: {fileID: 0}
 --- !u!224 &4755083538151446573 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 528620910014819387, guid: 3193f23249b829543ab5a271f85a6db4, type: 3}
