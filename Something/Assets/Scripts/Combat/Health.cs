@@ -35,7 +35,7 @@ namespace BHSCamp
             if (CurrentHealth == 0) return;
 
             _currentHealth -= amount;
-            _currentHealth = Mathf.Clamp(_currentHealth, 0, _defaultMaxHealth); //здоровье не может быть < 0
+            _currentHealth = Mathf.Clamp(_currentHealth, 0, _maxHealth); //здоровье не может быть < 0
 
             OnDamageTaken?.Invoke(amount);
             if (_currentHealth == 0)
@@ -52,7 +52,7 @@ namespace BHSCamp
                 _healthbar.UpdateHealthbar(MaxHealth);
 
             _currentHealth += amount;
-            _currentHealth = Mathf.Clamp(_currentHealth, 0, _defaultMaxHealth);
+            _currentHealth = Mathf.Clamp(_currentHealth, 0, _maxHealth);
             OnHealed?.Invoke(amount);
         }
 
