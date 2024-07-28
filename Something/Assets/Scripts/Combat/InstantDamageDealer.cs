@@ -29,7 +29,7 @@ namespace BHSCamp
         {
             // если объект, с которым произошла коллизия, не имеет компонент IDamageable,
             //ничего не делаем
-            if (damageable == null) return; 
+            if (damageable == null) return;
 
             MonoBehaviour mb = (MonoBehaviour)damageable;
             if (_knockbackApplied)

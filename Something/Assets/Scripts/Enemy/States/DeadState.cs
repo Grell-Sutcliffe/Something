@@ -7,6 +7,7 @@ namespace BHSCamp
     {
         //protected Healthbar _healthbar;
         //protected Health _health;
+        protected Collider2D _collider;
 
         private PatrolEnemy _enemy;
         private Animator _animator;
@@ -19,6 +20,8 @@ namespace BHSCamp
             //_healthbar = enemy.GetComponent<Healthbar>();
             //_health = enemy.GetComponent<Health>();
 
+            _collider = enemy.GetComponent<Collider2D>();
+
             _respawn = respawn;
             _respawnTime = respawnTime;
             _animator = enemy.GetComponent<Animator>();
@@ -27,6 +30,8 @@ namespace BHSCamp
 
         public override void Enter()
         {
+            //_collider.isTrigger = true;
+
             _animator.SetBool("IsDead", true);
             _timer = 0;
         }
@@ -43,6 +48,8 @@ namespace BHSCamp
 
         public override void Exit()
         {
+            //_collider.isTrigger = false;
+
             _animator.SetBool("IsDead", false);
             Health health = _enemy.GetComponent<Health>();
             health.Heal(health.MaxHealth);

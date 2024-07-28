@@ -24,6 +24,8 @@ namespace BHSCamp
             if (amount < 0) //нельзя нанести отрицательный урон
                 throw new ArgumentOutOfRangeException($"Damage amount can't be negative!: {gameObject.name}");
 
+            if (CurrentHealth == 0) return;
+
             _currentHealth -= amount;
             _currentHealth = Mathf.Clamp(_currentHealth, 0, _defaultMaxHealth); //здоровье не может быть < 0
 
