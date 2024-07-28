@@ -5,6 +5,9 @@ namespace BHSCamp
 {
     public class DeadState : FsmState
     {
+        //protected Healthbar _healthbar;
+        //protected Health _health;
+
         private PatrolEnemy _enemy;
         private Animator _animator;
         private bool _respawn;
@@ -13,6 +16,9 @@ namespace BHSCamp
 
         public DeadState(Fsm fsm, PatrolEnemy enemy, bool respawn, float respawnTime) : base(fsm)
         {
+            //_healthbar = enemy.GetComponent<Healthbar>();
+            //_health = enemy.GetComponent<Health>();
+
             _respawn = respawn;
             _respawnTime = respawnTime;
             _animator = enemy.GetComponent<Animator>();
@@ -31,6 +37,8 @@ namespace BHSCamp
             _timer += deltaTime;
             if (_timer > _respawnTime)
                 Fsm.SetState<PatrolState>();
+            //if (_healthbar.isActiveAndEnabled) 
+            //    _healthbar.UpdateHealthbar(_health.MaxHealth);
         }
 
         public override void Exit()
@@ -38,6 +46,8 @@ namespace BHSCamp
             _animator.SetBool("IsDead", false);
             Health health = _enemy.GetComponent<Health>();
             health.Heal(health.MaxHealth);
+            //if (_healthbar.isActiveAndEnabled)
+            //    _healthbar.UpdateHealthbar(_health.MaxHealth);
         }
     }
 }

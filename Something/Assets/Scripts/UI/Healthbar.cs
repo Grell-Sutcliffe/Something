@@ -19,7 +19,7 @@ public class Healthbar : MonoBehaviour
         _health.OnHealed -= UpdateHealthbar;
     }
 
-    private void UpdateHealthbar(int healthChange)
+    public void UpdateHealthbar(int healthChange)
     {
         SetFill(
             (float)_health.CurrentHealth /

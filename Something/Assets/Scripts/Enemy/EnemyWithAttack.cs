@@ -10,6 +10,7 @@ namespace BHSCamp
         [SerializeField] protected LayerMask _playerLayerMask;
         [SerializeField] protected Vector2 _attackRange;
         protected AttackBase _attack;
+        protected Healthbar _healthbar;
         public bool CanAttack { get; private set; }
 
         private void Awake()
@@ -17,6 +18,7 @@ namespace BHSCamp
             _attack = GetComponent<AttackBase>();
             _body = GetComponent<Rigidbody2D>();
             _health = GetComponent<Health>();
+            _healthbar = GetComponent<Healthbar>();
         }
 
         private void Start()
@@ -37,6 +39,8 @@ namespace BHSCamp
         private void Update()
         {
             _fsm.Update(Time.deltaTime);
+            if (_healthbar != null) 
+                _healthbar.UpdateHealthbar(_health.MaxHealth);
         }
 
         public virtual bool PlayerInSight()

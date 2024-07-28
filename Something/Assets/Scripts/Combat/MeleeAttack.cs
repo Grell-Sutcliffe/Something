@@ -6,11 +6,6 @@ namespace BHSCamp
     {
         [SerializeField] InstantDamageDealer _damageDealer;
 
-        private void Awake()
-        {
-            _animator = GetComponent<Animator>();
-        }
-
         public override void SetDamageMultiplier(float multiplier)
         {
             _damageDealer.SetDamageMultiplier(multiplier);

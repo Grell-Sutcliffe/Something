@@ -5,6 +5,9 @@ namespace BHSCamp
 {
     public class PatrolState : FsmState
     {
+        //protected Healthbar _healthbar;
+        //protected Health _health;
+
         private PatrolEnemy _enemy;
         private Animator _animator;
         private Rigidbody2D _body;
@@ -16,6 +19,9 @@ namespace BHSCamp
 
         public PatrolState(Fsm fsm, PatrolEnemy enemy, float speed, Transform[] waypoints) : base(fsm)
         {
+            //_healthbar = enemy.GetComponent<Healthbar>();
+            //_health = enemy.GetComponent<Health>();
+
             _enemy = enemy;
             _speed = speed;
             _waypoints = waypoints;
