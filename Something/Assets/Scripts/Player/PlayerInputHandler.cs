@@ -11,6 +11,7 @@ namespace BHSCamp
         private AttackBase _attack;
         private Health _health;
         private PlayerAnimation _animation;
+        private CharacterSound _sound;
         private Ground _ground;
         private bool _isDead;
 
@@ -32,6 +33,7 @@ namespace BHSCamp
             _attack = GetComponent<AttackBase>();
             _ground = GetComponent<Ground>();
             _health = GetComponent<Health>();
+            _sound = GetComponent<CharacterSound>();
         }
 
         private void Update()
@@ -43,12 +45,16 @@ namespace BHSCamp
             _horizontal = _attack.IsAttacking && _ground.OnGround? 0 : _horizontal;
             _movable.SetVelocity(new Vector2(_horizontal, 0), _speed);
             _animation.SetInputX(_horizontal);
+            _sound.SetInputX(_horizontal);
 
             if (Input.GetButtonDown("Attack"))
                 _attack.BeginAttack();
 
             if (Input.GetButtonDown("Jump"))
+            {
+                //_sound.PlayJumpSound();
                 _jump.Action();
+            }
         }
 
         private void HandleDeath()

@@ -10,10 +10,13 @@ namespace BHSCamp
         [SerializeField] private AudioClip _attackSound;
         [SerializeField] private AudioClip _hurtSound;
         [SerializeField] private AudioClip _runSound;
+        [SerializeField] private AudioClip _deathSound;
         private AudioSource _audioSource;
         private Ground _ground;
         private float _inputX;
         private bool _isRunngin;
+
+        [SerializeField] private AudioSource _stepAudioSource;
 
         private void Awake()
         {
@@ -24,17 +27,17 @@ namespace BHSCamp
         private void Update()
         {
             //just started running
-            if (false == _isRunngin && _ground.OnGround && 0 != _inputX)
+            if (_isRunngin == false && _ground.OnGround && _inputX != 0)
             {
                 _isRunngin = true;
-                _audioSource.clip = _runSound;
-                _audioSource.Play(0);
+                _stepAudioSource.clip = _runSound;
+                _stepAudioSource.Play();
             }
             //finish running or jump
-            if (_isRunngin && (false == _ground.OnGround || 0 == _inputX))
+            if (_isRunngin && (_ground.OnGround == false || _inputX == 0))
             {
                 _isRunngin = false;
-                _audioSource.Stop();
+                _stepAudioSource.Stop();
             }
         }
 
@@ -54,6 +57,12 @@ namespace BHSCamp
         {
             if (_hurtSound != null)
                 _audioSource.PlayOneShot(_hurtSound);
+        }
+
+        public void PlayDeathSound()
+        {
+            if (_deathSound != null)
+                _audioSource.PlayOneShot(_deathSound);
         }
 
         public void SetInputX(float inputX)
