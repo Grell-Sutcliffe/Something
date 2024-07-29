@@ -1033,7 +1033,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &273940752
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3716,10 +3716,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _trackList:
-  - {fileID: 8300000, guid: f3c92110a1bc2fc41b2acd2df32e76f2, type: 3}
-  - {fileID: 8300000, guid: 08ad87c5f3e9a0f4fafbc228fbc96855, type: 3}
   - {fileID: 8300000, guid: 810dca810ad22dc47b945e3c0e7157f4, type: 3}
-  - {fileID: 8300000, guid: c01cdbda67f7e2b47ba947d820a94c0b, type: 3}
 --- !u!82 &1063372444
 AudioSource:
   m_ObjectHideFlags: 0
