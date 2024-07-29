@@ -1,4 +1,7 @@
 using BHSCamp;
+using System.Collections;
+using System.Collections.Generic;
+using Unity.VisualScripting.Antlr3.Runtime.Collections;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -40,12 +43,24 @@ public class Healthbar : MonoBehaviour
 
     private void Update()
     {
-        if (_parentIsUI) return;
+        if (_parentIsUI)
+        {
+            if (_health.CurrentHealth <= 0)
+                StartCoroutine(ReturnToMainMenuAfterDelay(3));
+        }
+        else
+        {
+            transform.localScale = new Vector3(
+                transform.parent.localScale.x * 2,
+                transform.localScale.y,
+                transform.localScale.z
+            );
+        }
+    }
 
-        transform.localScale = new Vector3(
-            transform.parent.localScale.x * 2,
-            transform.localScale.y,
-            transform.localScale.z
-        );
+    private IEnumerator ReturnToMainMenuAfterDelay(float delay)
+    {
+        yield return new WaitForSeconds(delay);
+        GameManager.Instance.ExitCurrentLevel();
     }
 }
