@@ -5,8 +5,9 @@ using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
-    public static GameManager Instance;
+    public static GameManager Instance { get; private set; }
     public static event Action OnScoreChanged;
+
     [SerializeField] private LevelPreviewData[] _levels;
     private int _currentLevelIndex;
     public int Score 
@@ -17,10 +18,12 @@ public class GameManager : MonoBehaviour
 
     private void Awake()
     {
-        if (Instance == null)
+        if (Instance != null)
         {
             Destroy(gameObject);
+            return;
         }
+
         Instance = this;
         DontDestroyOnLoad(gameObject);
     }
@@ -39,13 +42,20 @@ public class GameManager : MonoBehaviour
                 );
         _score += amount;
         OnScoreChanged?.Invoke();
-        Debug.Log($"Score: {_score}");
+        //Debug.Log($"Score: {_score}");
     }
 
     public void FinishCurrentLevel()
     {
+        SaveLoadSystem.SaveLevel(_currentLevelIndex);
         SceneManager.LoadScene(0);
         OpenAccessToNextLevel();
+    }
+
+    public void ExitCurrentLevel()
+    {
+        //Debug.Log("Exit level");
+        SceneManager.LoadScene(0);
     }
 
     public void OpenAccessToNextLevel()

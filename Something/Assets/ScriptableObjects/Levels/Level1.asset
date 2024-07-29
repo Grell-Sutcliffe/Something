@@ -16,3 +16,4 @@ MonoBehaviour:
   Name: Starry forest
   SceneIndex: 1
   IsAccessable: 1
+  CoinsAmount: 50

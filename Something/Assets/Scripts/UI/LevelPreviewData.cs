@@ -7,4 +7,5 @@ public class LevelPreviewData : ScriptableObject
     public string Name;
     public int SceneIndex;
     public bool IsAccessable;
+    public int CoinsAmount;
 }

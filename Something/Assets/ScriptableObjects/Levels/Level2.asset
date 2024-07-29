@@ -15,4 +15,5 @@ MonoBehaviour:
   Preview: {fileID: 21300000, guid: ef69b1a4f501b2641875882f03ea4558, type: 3}
   Name: Deep in the cave
   SceneIndex: 2
-  IsAccessable: 1
+  IsAccessable: 0
+  CoinsAmount: 90

@@ -16,3 +16,4 @@ MonoBehaviour:
   Name: Mystery forest
   SceneIndex: 4
   IsAccessable: 0
+  CoinsAmount: 35
