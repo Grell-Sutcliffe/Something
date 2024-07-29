@@ -8,6 +8,8 @@ namespace BHSCamp
     [RequireComponent(typeof(AudioSource))]
     public class AudioManager : MonoBehaviour
     {
+        public static AudioManager Instance { get; private set; }
+
         public const string MasterVolume = "Master";
         public const string MusicVolume = "Music";
         public const string SFXVolume = "SFX";
@@ -22,6 +24,16 @@ namespace BHSCamp
         private void Awake()
         {
             _audioPlayer = GetComponent<AudioSource>();
+
+
+            if (Instance != null)
+            {
+                Destroy(gameObject);
+                return;
+            }
+
+            Instance = this;
+            DontDestroyOnLoad(gameObject);
         }
 
         private void Start()
