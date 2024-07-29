@@ -6,7 +6,7 @@ using UnityEngine;
 
 namespace BHSCamp
 {
-    public struct SoundSettings
+    public struct SoundOptions
     {
         public float Master;
         public float SFX;
@@ -28,16 +28,16 @@ namespace BHSCamp
             _levels = levels;
         }
 
-        public static void SaveSound(SoundSettings settings)
+        public static void SaveSound(SoundOptions settings)
         {
             PlayerPrefs.SetFloat(MasterVolumeKey, settings.Master);
             PlayerPrefs.SetFloat(SFXVolumeKey, settings.SFX);
             PlayerPrefs.SetFloat(MusicVolumeKey, settings.Music);
         }
 
-        public static SoundSettings LoadSound()
+        public static SoundOptions LoadSound()
         {
-            SoundSettings sound = new();
+            SoundOptions sound = new();
             sound.Master = PlayerPrefs.GetFloat(MasterVolumeKey, 1f);
             sound.SFX = PlayerPrefs.GetFloat(SFXVolumeKey, 1f);
             sound.Music = PlayerPrefs.GetFloat(MusicVolumeKey, 1f);
